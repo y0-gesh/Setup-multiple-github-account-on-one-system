@@ -237,16 +237,18 @@ Inside each repository:
 
 ## Personal Repository
 
-```
-git config user.name "Your Name"git config user.email "personal@gmail.com"
+```text
+git config user.name "Your Name"
+git config user.email "personal@gmail.com"
 ```
 
 ---
 
 ## Work Repository
 
-```
-git config user.name "Your Name"git config user.email "work@company.com"
+```text
+git config user.name "Your Name"
+git config user.email "work@company.com"
 ```
 
 ---
