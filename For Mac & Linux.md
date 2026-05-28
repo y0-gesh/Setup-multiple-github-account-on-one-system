@@ -111,8 +111,20 @@ nano ~/.ssh/config
 
 Add the following configuration:
 
-```
-# Personal GitHubHost github-personal    HostName github.com    User git    IdentityFile ~/.ssh/id_ed25519_personal    IdentitiesOnly yes# Work GitHubHost github-work    HostName github.com    User git    IdentityFile ~/.ssh/id_ed25519_work    IdentitiesOnly yes
+```text
+# Personal GitHub
+Host github-personal
+    HostName github.com
+    User git
+    IdentityFile ~/.ssh/id_ed25519_personal
+    IdentitiesOnly yes
+
+# Work GitHub
+Host github-work
+    HostName github.com
+    User git
+    IdentityFile ~/.ssh/id_ed25519_work
+    IdentitiesOnly yes
 ```
 
 Save and exit:
@@ -269,8 +281,15 @@ git@github-work:...
 
 # Example Folder Structure
 
-```
-Projects/├── personal/│   ├── portfolio/│   └── side-project/│└── work/    ├── client-dashboard/    └── internal-tools/
+```text
+Projects/
+├── personal/
+│   ├── portfolio/
+│   └── side-project/
+│
+└── work/
+    ├── client-dashboard/
+    └── internal-tools/
 ```
 
 ---
@@ -324,8 +343,12 @@ nano ~/.gitconfig
 
 Add:
 
-```
-[includeIf "gitdir:~/Projects/work/"]    path = ~/.gitconfig-work[includeIf "gitdir:~/Projects/personal/"]    path = ~/.gitconfig-personal
+```text
+[includeIf "gitdir:~/Projects/work/"]
+    path = ~/.gitconfig-work
+
+[includeIf "gitdir:~/Projects/personal/"]
+    path = ~/.gitconfig-personal
 ```
 
 ---
